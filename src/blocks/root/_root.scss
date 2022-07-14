@@ -1,0 +1,13 @@
+@use "../../styles/vars/colors";
+@use "../../styles/vars/utils" as *;
+
+.root {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  background-color: colors.$white;
+  -webkit-font-smoothing: antialiased;
+}

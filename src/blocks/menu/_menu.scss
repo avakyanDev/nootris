@@ -1,0 +1,44 @@
+@use "../../styles/vars/colors";
+@use "../../styles/vars/utils" as *;
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+  }
+  &__link {
+    color: colors.$white;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    transition: color $tr;
+
+    &:hover {
+      color: colors.$orange;
+    }
+  }
+
+  .modal & {
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+      &:not(:first-child) {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+    }
+    &__link {
+      color: colors.$white;
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+}

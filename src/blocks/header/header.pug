@@ -1,0 +1,16 @@
+header.header
+  .container.header__container
+    a.header__logo.logo(href="/")
+      include ../../images/logo.svg
+    nav.header__menu
+      include ../menu/menu
+      a.header__contacts(href="tel:" + phone) #{phone}
+    .header__icons
+      .header__cart
+        a.cart.cart_full(href="#")
+          include ../cart/cart.svg
+          .cart__label
+            .cart__label-value 1
+      .header__menu-mobile
+        a.icon.icon_menu#openMenu(href="#")
+          include ../../images/icons/menu.svg

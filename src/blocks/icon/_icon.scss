@@ -1,0 +1,14 @@
+@use "../../styles/vars/colors";
+@use "../../styles/vars/utils" as *;
+
+.icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  fill: colors.$white;
+
+  @media (max-width: 480px) {
+    width: 24px;
+    height: 24px;
+  }
+}

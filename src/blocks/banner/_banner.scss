@@ -1,0 +1,172 @@
+@use "../../styles/vars/colors";
+@use "../../styles/vars/utils" as *;
+
+.banner {
+  position: relative;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background: colors.$yellow;
+
+  &__image {
+    position: absolute;
+    top: 64px;
+    right: 64px;
+    bottom: -120px;
+    width: 720px;
+    height: auto;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    max-width: 1000px;
+    margin: 0;
+    padding: 0;
+    color: colors.$white;
+    font-weight: 700;
+    font-size: 144px;
+    line-height: 152px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    max-width: 670px;
+    margin-top: 24px;
+    margin-bottom: 0;
+    color: #000000;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__slogan {
+    margin-top: 120px;
+  }
+
+  &__slogan-title {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+  }
+
+  &__slogan-subtitle {
+    max-width: 415px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: #000000;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 1220px) {
+    &__image {
+      top: 100px;
+      right: 84px;
+      width: 600px;
+    }
+
+    &__title {
+      font-size: 100px;
+      line-height: 112px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    &__image {
+      top: 42px;
+      right: 32px;
+      width: 494px;
+    }
+
+    &__title {
+      font-size: 82px;
+      line-height: 90px;
+    }
+
+    &__subtitle {
+      max-width: 520px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__slogan {
+      margin-top: 80px;
+    }
+
+    &__slogan-title {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__slogan-subtitle {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    &__image {
+      top: 80px;
+      right: 16px;
+      width: 410px;
+    }
+
+    &__title {
+      font-size: 62px;
+      line-height: 72px;
+    }
+
+    &__slogan {
+      margin-top: 60px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &__image {
+      display: none;
+    }
+
+    &__title {
+      font-size: 38px;
+      line-height: 48px;
+      text-align: center;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+    }
+
+    &__slogan {
+      margin-top: 40px;
+    }
+
+    &__slogan-title {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    &__slogan-subtitle {
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+    }
+  }
+}

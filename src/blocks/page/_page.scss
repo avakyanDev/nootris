@@ -1,0 +1,8 @@
+@use "../../styles/vars/colors";
+@use "../../styles/vars/utils" as *;
+
+.page {
+  max-width: $container;
+  margin: 0 auto;
+  background: colors.$white;
+}

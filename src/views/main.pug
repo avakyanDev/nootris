@@ -1,0 +1,33 @@
+- var title = "Nootris"
+- var phone = "8 (800) 600-09-90"
+-
+  var menu = [
+      {
+        title: 'FAQ',
+        link: '/'
+      },
+      {
+        title: 'Оплата и доставка',
+        link: '/'
+      },
+      {
+        title: 'Возврат',
+        link: '/'
+      },
+      {
+        title: 'Исследования',
+        link: '/'
+      },
+      {
+        title: 'Личный кабинет',
+        link: '/'
+      }
+    ]
+
+
+block page
+  .page
+    include ../blocks/header/header
+    main.content
+      include pages/index
+  include ../blocks/modal/modal

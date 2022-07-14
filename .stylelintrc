@@ -1,0 +1,8 @@
+{
+  "extends": ["stylelint-config-rational-order"],
+  "plugins": ["stylelint-prettier"],
+  "rules": {
+    "prettier/prettier": true,
+    "comment-empty-line-before": "always"
+  }
+}

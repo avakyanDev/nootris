@@ -1,0 +1,45 @@
+@use "../../styles/vars/colors";
+@use "../../styles/vars/utils" as *;
+
+.cart {
+  display: block;
+  width: 32px;
+  height: 32px;
+  transition: opacity $tr;
+  fill: white;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &_full {
+    position: relative;
+
+    & .cart__label {
+      display: flex;
+    }
+  }
+  &__label {
+    position: absolute;
+    right: -20%;
+    bottom: -10%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background: colors.$orange;
+    border-radius: 50%;
+  }
+  &__label-value {
+    color: #000000;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    width: 24px;
+    height: 24px;
+  }
+}
